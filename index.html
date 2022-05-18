@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- ====================Style======================-->
+  <script src="https://kit.fontawesome.com/257c16a74e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/bootstrap.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <script src="./JS/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--====================offer banner=======================-->
+  <div class="container-fluid" id="offer_banner">
+    <div class="container">
+      <div class="row">
+        <p class="text-center mb-auto p-2">
+          Free Standard Shipping on orders over $99.99
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--=====================Header===========================-->
+
+  <div class="container-fluid" id="header">
+    <div class="row">
+      <nav>
+        <button class="burger">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </button>
+
+        <ul class="nav-links">
+          <div id="navBottomMenu">  
+            <ul class="d-md-flex d-lg-flex">
+              <li><a href="">Acne</a></li>
+              <li><a href="">Sun</a></li>
+              <li><a href="">Ezcema</a></li>
+              <li><a href="">Psoriasis</a></li>
+              <li><a href="">Vitiligio</a></li>
+              <li class="otherLiHide mt-4 mt-lg-0"><a href="">ABOUT</a></li>
+              <li class="otherLiHide"><a href="">CONSULTATION</a></li>
+              
+            </ul>
+          </div>
+          <li class="otherLi"><a href="#">ABOUT</a></li>
+          <li class="otherLi"><a href="#">CONSULTATION</a></li>
+        </ul>
+
+        <a class="logo" href="#">sooth</a>
+        
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="inputSearch" />
+       
+        <button class="btn" type="submit" onclick="displayInput()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        
+        <ul class="nav-links">
+          <li>
+            <a href="#">CART</a>
+          </li>
+          <li>
+            <a href="#">LOGIN</a>
+          </li>
+        </ul>
+        
+      </nav>
+      
+    </div>
+    
+      
+    
+  </div>
+
+  <!--=====================Hero Banner===========================-->
+  <div class="container-fluid" id="hero-banner">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 p-5 order-last order-md-first m-auto">
+        <div class="newDiv text-center">
+          <p>New!</p>
+        </div>
+        <h2>All Natural Skin Remedies.</h2>
+        <p>
+          A healthier you from the inside out. We’ve sourced the cleanest
+          ingredients to create a line of clean skin care treatments that
+          leave you feeling your best
+        </p>
+        <button id="heroBtn">Shop products</button>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div id="heroMainImg">
+          <img src="./Assets/updated_Header_copy.png" alt="Hands" width="100%" height="100%" />
+          <img src="./Assets/plant.png" alt="Plant twig" id="plant" />
+          <img src="./Assets/plant-1.png" alt="Plat small twig" id="plant1" />
+          <img src="./Assets/ezcema@3x.png" alt="Ezcema Bottle" id="bottleImage" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=====================Secondary Banner===========================-->
+  <div class="container-fluid" id="secondary-banner">
+    <div class="container">
+      <div class="row text-center py-2">
+        <h2>Solutions for all skin health</h2>
+        <p>Explore our innovative skincare products</p>
+      </div>
+    </div>
+  </div>
+
+  <!--=====================Product Teaser 1===========================-->
+
+  <div class="container-fluid product-teaser">
+    <div class="container">
+      <div class="d-flex justify-content-between px-3">
+        <span>Most Popular</span>
+        <span>Shop all products</span>
+      </div>
+      <div class="row prodTeasRow">
+        <div class="col-md-3 col-6 text-center prodTeas-Wrapper">
+          
+          <img src="./Assets/Cream1_copy.png" alt="Acne Cream" width="100%" />
+          <div class="newDivProd text-center">
+            <p>New!</p>
+          </div>
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center prodTeas-Wrapper">
+          <img src="./Assets/vitiligio.png" alt="Vitiligio Solution" width="100%" />
+          <div class="newDivProd text-center">
+            <p>New!</p>
+          </div>
+          <h3>Vitiligio</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/suburn1.png" alt="Sunburn Ointment" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/ezcema.png" alt="Ezcema Bottle" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=====================Teaser===========================-->
+  <div class="container-fluid" id="teaser-1">
+    <div class="row">
+      <div class="col-12 col-md-6 p-5 m-auto">
+        <h2>Clean products that deliver better solutions</h2>
+        <p>
+          A healthier you from the inside out. We’ve sourced the cleanest
+          ingredients to create a line of clean skin care treatments that
+          leave you feeling your best
+        </p>
+        <button>Shop more</button>
+      </div>
+      <div class="col-md-6" id="man-image"></div>
+    </div>
+  </div>
+  <!--=====================Product Teaser 2 8 products===========================-->
+
+  <div class="container-fluid product-teaser">
+    <div class="container">
+      <div class="d-flex justify-content-between px-3">
+        <span>Top Rated</span>
+        <span>Shop all products</span>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/psoriasis_treatment.png" alt="Psoriasis Cream" width="100%" />
+          <h3>Psoriasis Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/ezcema-1.png" alt="Ezcema Cream" width="100%" />
+          <h3>Ezcema Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/suburn1-1.png" alt="Sunburn Ointment" width="100%" />
+          <h3>Sunburn Ointment</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/vitiligio_Balm.png" alt="Vitiligio Balm" width="100%" />
+          <h3>Vitiligio Balm</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/vitiligio.png" alt="Acne Cream" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/Cream1_copy.png" alt="Acne Cream" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/acne_Cream_copy.png" alt="Acne Cream" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/ezema_dropper.png" alt="Acne Cream" width="100%" />
+          <h3>Acne Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=====================Teaser 2===========================-->
+  <div class="container-fluid" id="teaser-2">
+    <div class="row">
+      <div class="col-12 col-md-6 p-5 m-auto">
+        <div id="woman-text">
+          <h2>Clean products that deliver better solutions</h2>
+          <p>
+            A healthier you from the inside out. We’ve sourced the cleanest
+            ingredients to create a line of clean skin care treatments that
+            leave you feeling your best
+          </p>
+          <button>Shop more</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 order-first" id="woman-image"></div>
+    </div>
+  </div>
+  <!--=====================Product Teaser 3===========================-->
+
+  <div class="container-fluid product-teaser">
+    <div class="container">
+      <div class="d-flex justify-content-between px-3">
+        <span>Recommended</span>
+        <span>Shop all products</span>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/psoriasis_treatment.png" alt="Psoriasis Cream" width="100%" />
+          <h3>Psoriasis Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/vitiligio_Balm.png" alt="Vitiligio Balm" width="100%" />
+          <h3>Vitiligio Balm</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/psoriasi_Cream.png" alt="Psoriasis Cream" width="100%" />
+          <h3>Psoriasis Cream</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="./Assets/vitiglio_treatment.png" alt="Vitiligio Treatment" width="100%" />
+          <h3>Vitiligio Treatment</h3>
+          <p>All Natural ingredients</p>
+          <h4>$24.99</h4>
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=================================Image tiles===================================-->
+  <div class="container-fluid py-5 text-center" id="ImageTiles">
+    <div class="row">
+      <h2>We use the best ingredients</h2>
+      <p>Explore our innovative skincare products</p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/basil.png" alt="mint" width="50%" />
+        <h4>Mint</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/cacao.png" alt="Cacao" width="50%" />
+        <h4>Cacao</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/cheese.png" alt="Cheese" width="50%" />
+        <h4>Coconut roots</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/floor.png" alt="Floor" width="50%" />
+        <h4>Flour</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/honey.png" alt="Honey" width="50%" />
+        <h4>Honey</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+      <div class="col-12 col-md-4 p-4">
+        <img src="./Assets/cropped/tomato.png" alt="tomato" width="50%" />
+        <h4>Tomato</h4>
+        <p>Lorem ipsum dolar et al</p>
+      </div>
+    </div>
+  </div>
+  <!--=================================Feature Banner===================================-->
+  <div class="container-fluid py-5" id="feature-banner">
+    <div class="row">
+      <div class="col-12 col-md-4 text-center">
+        <i class="fa-solid fa-store"></i>
+        <p><strong>We’re offering new ways to shop.</strong></p>
+        <a href="#">Store locator</a>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p><strong>We’re offering new ways to shop.</strong></p>
+        <a href="#">Store locator</a>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p><strong>We’re offering new ways to shop.</strong></p>
+        <a href="#">Store locator</a>
+      </div>
+    </div>
+  </div>
+  <!--=================================News Letter===================================-->
+  <div class="container-fluid py-5 text-center" id="newsLetter">
+    <div class="row">
+      <div class="col-12 col-md-2">
+        <h2>Join the Sooth family</h2>
+      </div>
+      <div class="col-12 col-md-5">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy
+        </p>
+      </div>
+      <div class="col-12 col-md-5">
+        <div id="subscribeDiv0">
+          <input type="text" placeholder="Your email..." />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=================================Footer===================================-->
+  <div class="container-fluid py-5" id="footer">
+    <div class="container">
+      <div class="row" id="footerBorder">
+        <div class="col-12 col-md-6 order-last order-md-first">
+          <h2>sooth</h2>
+          <p>Explore our innovative skincare products</p>
+          <div id="subscribeDiv">
+            <input type="text" placeholder="Your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <h3>SHOP</h3>
+              <ul>
+                <li><a href="">Lorem ipsum al</a></li>
+                <li><a href="">Dolar at</a></li>
+                <li><a href="">Veraotio</a></li>
+                <li><a href="">Chauloe</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4">
+              <h3>ABOUT</h3>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Sooth Stories (Blog)</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Learn More</a></li>
+                <li><a href="">Stores</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4">
+              <h3>MORE</h3>
+              <ul>
+                <li><a href="">Dollar at</a></li>
+                <li><a href="">Lorem at al</a></li>
+                <li><a href="">Veraotio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <p>SOOTH ALL RIGHTS RESERVED</p>
+        <div class="d-md-flex justify-content-md-between">
+          <div class="row">
+            <div class="col-4"><a href="">Privacy Policy</a></div>
+            <div class="col-4"><a href="">Terms of Use</a></div>
+            <div class="col-4"><a href="">Contact Us</a></div>
+          </div>
+          <div id="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./JS/app.js"></script>
+</body>
+
+</html>
